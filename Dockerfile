@@ -2,7 +2,6 @@ FROM python:3-slim
 
 # build-essential is needed for various python dependencies (gcc + others are in build-essential)
 # libpq-dev is needed for psycopg2 to be installed
-RUN yum update
 RUN yum install -y build-essential libpq-dev
 RUN rm -rf /var/lib/apt/lists/*
 
