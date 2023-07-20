@@ -4,7 +4,7 @@ FROM python:3-slim
 # libpq-dev is needed for psycopg2 to be installed
 RUN sudo  yum update \
     &&  sudo yum install -y build-essential libpq-dev \
-    && sudo  rm -rf /var/lib/apt/lists/*
+    &&  rm -rf /var/lib/apt/lists/*
 
 # The .aptible directory contains an .aptible.yml file and a Procfile
 # 1. The .aptible.yml file has a `before_release` which runs data migrations in an isolated container before a launch
