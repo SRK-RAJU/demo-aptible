@@ -19,5 +19,5 @@ ADD requirements.txt /app/
 RUN pip install -r requirements.txt
 ADD app/ /app/
 
-ENV PORT 5345
-EXPOSE 5345
+ENV PORT 5000
+EXPOSE 5000
