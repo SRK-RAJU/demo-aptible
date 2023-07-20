@@ -49,11 +49,4 @@ aptible config:set \
   IDLE_TIMEOUT=90
 ```
 
-* Create an Endpoint for the application from your Dashboard.
-
-## Copyright
-
-Copyright (c) 2022 [Aptible](https://www.aptible.com). All rights reserved.
-
-[<img src="https://avatars2.githubusercontent.com/u/1580788?v=4&s=60" />](https://github.com/UserNotFound)
 
