@@ -1,12 +1,16 @@
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main 
 env:
   APTIBLE_ENVIRONMENT: ${{ secrets.APTIBLE_ENVIRONMENT }}
   APTIBLE_APP: ${{ secrets.APTIBLE_APP }}
 jobs:
   deploy:
-    runs-on: centos-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
         with:
