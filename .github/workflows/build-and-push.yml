@@ -11,7 +11,7 @@ env:
   
 jobs:
   deploy:
-    runs-on: CentOS-7
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
         with:
