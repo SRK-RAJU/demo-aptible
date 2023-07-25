@@ -22,5 +22,6 @@ jobs:
       - name: Deploy to Aptible
         run: |
           ssh-keyscan beta.aptible.com >> ~/.ssh/known_hosts
-          git remote add aptible git@beta.aptible.com:${APTIBLE_ENVIRONMENT}/${APTIBLE_APP}.git
-          git push aptible ${GITHUB_SHA}:main
+          git remote add aptible-cicd git@beta.aptible.com:${APTIBLE_ENVIRONMENT}/${APTIBLE_APP}.git
+          git push aptible-cicd ${GITHUB_SHA}:main
+          git push aptible-cicd main
