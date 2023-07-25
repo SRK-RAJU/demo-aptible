@@ -22,4 +22,4 @@ jobs:
         namespace: default
         project: "4980"
         tag: ${{ steps.vars.outputs.sha_short }}
-        token: ${${INPUT_TOKEN:?input \"token\" not set or empty}}
+        token: default
